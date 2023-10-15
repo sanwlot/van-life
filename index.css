@@ -143,3 +143,75 @@ header a:hover {
     color: white;
     border-radius: 10px;
 }
+
+/*** VANS PAGE ***/
+
+.vans-page-container {
+    padding: 1.5rem;
+}
+
+.vans-page-heading {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.vans-page-filters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #4D4D4D;
+    margin-bottom: 60px;
+}
+
+.vans-page-filters .filter {
+    border-radius: 0.3125rem;
+    background: #FFEAD0;
+    padding: .6rem .2rem;
+    width: 5rem;
+    text-align: center;
+}
+
+.clear-filters {
+    border-bottom: 1px solid #4D4D4D;
+}
+
+/*** VANCARD COMPONENT ***/
+.vans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 34px;
+}
+
+.van-card a {
+    color: #161616;
+    text-decoration: none;    
+}
+
+.van-image {
+    max-width: 100%;
+    border-radius: .3rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    color: #161616;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.per-day {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.van-type {
+    color: #FFEAD0;
+    padding: 7px;
+    width: 5.3rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+}
