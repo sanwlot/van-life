@@ -1,20 +1,7 @@
 import { Link } from "react-router-dom"; 
+import VanTypeBadge from "./VanTypeBadge";
 
 export default function VanCard(props) {
-  function geyVanTypeBadgeColor(type) {
-    switch (type) {
-      case 'simple':
-        return {backgroundColor: '#E17654'}
-
-      case 'luxury':
-        return {backgroundColor: '#161616'}
-
-      case 'rugged': 
-        return {backgroundColor: '#115E59'}
-      default:
-        break;
-    }
-  } 
   return(
     <div className="van-card">
       <Link to={`/vans/${props.id}`}>
@@ -26,7 +13,7 @@ export default function VanCard(props) {
             <div className="per-day">/day</div>
           </div>
         </div>
-        <div style={geyVanTypeBadgeColor(props.type)} className="van-type">{props.type}</div>
+        <VanTypeBadge type={props.type} />
       </Link>
     </div>
   )

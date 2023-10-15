@@ -215,3 +215,42 @@ header a:hover {
     text-align: center;
     font-weight: 600;
 }
+
+/* VAN DETAIL PAGE */
+
+.van-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.back-to-home {
+    border-bottom: 1px solid #161616;
+    cursor: pointer;
+}
+
+.van-img {
+    margin: 30px 0;
+    border-radius: 0.3rem;
+}
+
+.van-price {
+    font-weight: 550;
+    font-size: 1.5rem;
+}
+
+.rent-van-btn {
+    border: none;
+    background-color: #FF8C38;
+    color: white;
+    border-radius: .3rem;
+    max-width: 400px;
+    padding: 10px;  
+    cursor: pointer;
+}
+
+.back-to-all-vans-link {
+    text-decoration: none;
+    color: #161616;
+}
