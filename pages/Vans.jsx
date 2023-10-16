@@ -7,10 +7,10 @@ export default function Vans() {
   useEffect(() => {
     fetch("/api/vans")
       .then(res => res.json())
-      .then(vansDetails => setVansData(vansDetails.vans))
+      .then(data => setVansData(data.vans))
   }, [])
 
-  const vansElements = vansData.map(van => {
+  const vanElements = vansData.map(van => {
     return (
       <VanCard 
         key={van.id}
@@ -33,7 +33,7 @@ export default function Vans() {
         <div className="clear-filters">Clear filters</div>
       </div>
       <div className="vans-grid">
-        {vansElements}
+        {vanElements}
       </div>
     </div>
   )
