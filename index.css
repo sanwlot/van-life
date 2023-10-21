@@ -18,6 +18,12 @@ body {
   scrollbar-width: none;
 }
 
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     height: 110px;
     display: flex;
@@ -33,7 +39,7 @@ header .site-logo {
     font-size: 25px;
 }
 
-header a {
+ a {
     text-decoration: none;
     color: #4D4D4D;
     font-weight: 600;
@@ -253,4 +259,134 @@ header a:hover {
 .back-to-all-vans-link {
     text-decoration: none;
     color: #161616;
+}
+
+
+/* DASHBOARD */
+
+.dashboard-nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #161616;
+    color: #AAA;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* HostedVans */
+
+.hosted-vans-title {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hosted-vans-card {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: .1rem 1rem;
+    margin: .5rem 1rem;
+    border-radius: .3rem;
+}
+
+.hosted-vans-card img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: .3rem;
+}
+
+.hosted-van-details {
+    padding: 1rem;
+}
+
+/* hosted-van-info */
+
+.hosted-van-details-container {
+    background-color: white;
+    margin: 1rem;
+    padding: 1.4rem;
+    border-radius: .375rem;
+}
+.hosted-van-details-back-to-all-vans {
+    margin: 1rem 1rem .5rem 1rem;
+    padding: 1.4rem 1.4rem .5rem .3rem;
+}
+
+.hosted-van-info {
+    display: flex;
+    align-items: center;
+    margin: 0 1.2rem;
+}
+
+.hosted-van-info img {
+    width: 10rem;
+    border-radius: .375rem;
+}
+
+.hosted-van-name-price-type {
+    margin: 1.25rem;
+}
+
+.hosted-van-name-price-type p {
+    font-size: 1.2rem;
+}
+
+.hosted-van-name-price-type p span {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* HOSTED VAN DETAILS NAV */
+
+.hosted-van-detail-nav a:hover {
+    color: #161616;
+    text-decoration: underline;
+}
+
+/* HOST VAN INFO */
+
+.host-van-info-container {
+    color: #161616;
+    font-weight: 500;
+    line-height: 1.3rem;
+    margin: 2rem 1rem;
+}
+
+.host-van-info-container p {
+    margin: 1.2rem 0;
+}
+
+.host-van-info-container p span {
+    font-weight: 700;
+}
+
+/* HOST VAN PRICING */
+
+.host-van-pricing {
+    margin: 1rem;
+    margin-top: 2rem;
+    color: #4D4D4D;
+}
+
+.host-van-pricing-amount {
+    font-size: 2rem;
+    color: #161616;
+}
+
+/* HOST VAN PHOTOS */
+
+.host-van-photos-container img {
+    width: 6.5rem;
+    border-radius: .3rem;
+    margin: 1rem;
+    margin-top: 2rem;
 }

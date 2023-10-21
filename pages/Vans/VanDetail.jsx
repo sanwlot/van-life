@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
-import VanTypeBadge from "../components/VanTypeBadge"
+import VanTypeBadge from "../../components/VanTypeBadge"
 
 export default function VanDetail() {
   const params = useParams()
